@@ -10,7 +10,7 @@ const Home = () => {
       <ThemedLogo />
       <ThemedText style={styles.title}>The Number 1</ThemedText>
       <ThemedText style={{ fontWeight: "600" }}>Reading List App</ThemedText>
-      <Link href="/profile">Profile Page</Link>
+      <Link href="/login">Login Page</Link>
     </ThemedView>
   );
 };
