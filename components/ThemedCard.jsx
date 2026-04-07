@@ -1,4 +1,4 @@
-import { useColorScheme, View } from "react-native";
+import { StyleSheet, useColorScheme, View } from "react-native";
 import { colors } from "../constants/colors";
 
 const ThemedCard = ({ style, ...props }) => {
@@ -11,6 +11,7 @@ const ThemedCard = ({ style, ...props }) => {
         {
           backgroundColor: theme.bg.elevated,
         },
+        styles.base,
         style,
       ]}
       {...props}
@@ -19,3 +20,12 @@ const ThemedCard = ({ style, ...props }) => {
 };
 
 export default ThemedCard;
+
+const styles = StyleSheet.create({
+  base: {
+    padding: 20,
+    alignItems: "center",
+    gap: 20,
+    borderRadius: 8,
+  },
+});

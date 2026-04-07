@@ -28,7 +28,7 @@ export default function UserProvider({ children }) {
   };
 
   const logout = async () => {
-    await account.deleteSession({ sessionId: user.id });
+    await account.deleteSession({ sessionId: "current" });
     setUser(null);
   };
 
