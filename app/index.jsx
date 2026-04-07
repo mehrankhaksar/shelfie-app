@@ -11,6 +11,7 @@ const Home = () => {
       <ThemedText style={styles.title}>The Number 1</ThemedText>
       <ThemedText style={{ fontWeight: "600" }}>Reading List App</ThemedText>
       <Link href="/login">Login Page</Link>
+      <Link href="/profile">Profile Page</Link>
     </ThemedView>
   );
 };
