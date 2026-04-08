@@ -27,6 +27,7 @@ const ThemedView = ({ style, safe = false, ...props }) => {
           backgroundColor: theme.bg.base,
           paddingTop: inset.top,
           paddingBottom: inset.bottom,
+          paddingHorizontal: 20,
           flex: 1,
         },
         style,

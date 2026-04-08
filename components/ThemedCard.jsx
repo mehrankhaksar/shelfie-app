@@ -25,7 +25,6 @@ const styles = StyleSheet.create({
   base: {
     padding: 20,
     alignItems: "center",
-    gap: 20,
     borderRadius: 8,
   },
 });
