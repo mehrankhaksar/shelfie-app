@@ -2,10 +2,18 @@ import { createContext, useEffect, useState } from "react";
 import { client, databases } from "../lib/appWrite";
 import { ID, Permission, Query, Role } from "react-native-appwrite";
 import { useUser } from "../hooks/useUser";
+import Constants from "expo-constants";
 
 export const BooksContext = createContext();
-const DB_ID = process.env.EXPO_PUBLIC_DB_ID;
-const BOOK_COLLECTION_ID = process.env.EXPO_PUBLIC_BOOK_COLLECTION_ID;
+
+const config = Constants.expoConfig?.extra;
+
+if (!config) {
+  throw new Error("Expo config missing (app.json extra not loaded)");
+}
+
+const DB_ID = config.appwriteDbId;
+const BOOK_COLLECTION_ID = config.appwriteCollectionId;
 
 export default function BooksProvider({ children }) {
   const [books, setBooks] = useState([]);
