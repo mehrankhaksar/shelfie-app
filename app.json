@@ -1,11 +1,11 @@
 {
   "expo": {
-    "scheme": "shelfie",
+    "scheme": "shelfie-app",
     "experiments": {
       "typedRoutes": true
     },
     "name": "Shelfie",
-    "slug": "shelfie",
+    "slug": "shelfie-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
