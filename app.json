@@ -22,19 +22,21 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "package": "com.mehrankhaksar.shelfie"
+      "package": "com.mehrankhaksar.shelfieapp"
     },
-    "plugins": ["expo-router"],
+    "plugins": [
+      "expo-router"
+    ],
     "extra": {
       "router": {},
-      "eas": {
-        "projectId": "3abe9335-9e91-423c-8e62-bc31a9265d26"
-      },
       "appwriteEndpoint": "https://fra.cloud.appwrite.io/v1",
       "appwriteProjectId": "69b2b0ab0022a5bfa3e0",
       "appwriteProjectName": "Shelfie",
       "appwriteDbId": "69d4af31002d02ba2db2",
-      "appwriteCollectionId": "books"
+      "appwriteCollectionId": "books",
+      "eas": {
+        "projectId": "db23cb0f-37c1-4957-8037-fdfc928ee618"
+      }
     }
   }
 }
